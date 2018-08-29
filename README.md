@@ -6,13 +6,14 @@
 
 Binding event to the keys when they are pressed
 ```javascript
-/* window is a global variable that represents the window in which the code is running */
+// window is a global variable that represents the window in which the code is running
 window.addEventListener(‘keydown’, function(e){});
 ```
 
 Using document.querySelector() and document.querySelectorAll()
 ```javascript
-// The Document method querySelector() returns the first element that matches the specified selector. otherwise, null is returned
+/* The Document method querySelector() returns the first element that matches the specified selector.
+otherwise, null is returned */
 const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 // keyCode is a property of event 'e' associated with each key
 const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
