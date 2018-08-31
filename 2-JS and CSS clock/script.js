@@ -8,6 +8,9 @@ function setDate(argument) {
 	const min = now.getMinutes();
 	const hour = now.getHours();
 
+	if (seconds == 0) secondHand.classList.add('zero');
+	else secondHand.classList.remove('zero');
+
 	const secondsDegrees = ((seconds/60)*360) + 90;
 	const minsDegrees = ((min / 60) * 360) + ((seconds/60)*6) + 90;
 	const hoursDegrees = ((hour / 12) * 360) + ((min/60)*30) + 90;

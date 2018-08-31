@@ -1,8 +1,8 @@
 # 30 Day Vanilla JS Challenge
 
-### Day 1 : JavaScript Drumkit
+### Things I Learnt 
 
-##### Things I Learnt
+##### Day 1 : JavaScript Drumkit
 
 Binding event to the keys when they are pressed
 ```javascript
@@ -39,4 +39,35 @@ Applying a property to an array
 ```javascript
 // forEach loop adds the event listener to all the keys
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+```
+
+##### Day 2: JS and CSS Clock
+
+Running a function at every interval
+```javascript
+setInterval(function_name, interval);
+// Used as below to run setDate function every 1 second or 1000 milliseconds
+setInterval(setDate, 1000);
+```
+
+Using Date methods to run our clock
+```javascript
+// javascript comes with easy to use Date methods
+const now = new Date();
+now.getSeconds(); // Gives the current seconds
+now.getMinutes(); // Gives the current minutes
+now.getHour(); // Gives the current hour in 24-hour format
+```
+
+Removing the glitch at 0<sup>th</sup> second by making a class **zero**
+```css
+.zero {
+    transition: all 0s;
+}
+```
+
+Adding the class to secondHand when it reaches 0 and removing it afterwards
+```javascript
+if(seconds == 0) secondHand.classList.add('zero');
+else secondHand.classList.remove('zero');
 ```
