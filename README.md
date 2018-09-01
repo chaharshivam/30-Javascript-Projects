@@ -71,3 +71,50 @@ Adding the class to secondHand when it reaches 0 and removing it afterwards
 if(seconds == 0) secondHand.classList.add('zero');
 else secondHand.classList.remove('zero');
 ```
+
+##### Day 3 : CSS Variables
+
+How to use label in HTML and bind it to an element
+```html
+<label for="element"> Label: </label>
+```
+
+How to use input type **range** that has a slider with a default, min and max values
+```html
+<input type=“range” min="10" max="100" name="blur" value="20">
+```
+
+How to define custom data attributes
+```html
+<input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+```
+
+How to use CSS variables
+```css
+/* CSS Variables are declared at the root level*/
+:root {
+    --spacing: 10px;
+}
+/* To use the variable on a property */
+img {    
+    property-name: var(--spacing);
+}
+```
+
+Using querySelectorAll
+```javascript
+// querySelectorAll returns a NodeList
+```
+
+How dataset works
+```javascript
+// returns all data prefixed properties and their values
+this.dataset
+// Used in the code as
+const suffix = this.dataset.sizing || '';
+```
+
+Learnt about **document.documentElement** which returns root of the element of the document
+e.g. HTML element for HTML Documents
+
+Also learnt a few events like **mousemove** and **change**
