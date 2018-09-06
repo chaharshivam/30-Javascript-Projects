@@ -41,7 +41,7 @@ Applying a property to an array
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 ```
 
-##### Day 2: JS and CSS Clock
+##### Day 2 : JS and CSS Clock
 
 Running a function at every interval
 ```javascript
@@ -118,3 +118,75 @@ Learnt about **document.documentElement** which returns root of the element of t
 e.g. HTML element for HTML Documents
 
 Also learnt a few events like **mousemove** and **change**
+
+##### Day 4 : Array Cardio
+
+Learnt a few basic javascript functions
+
+**Filter**
+```javascript
+// Filters the array according to our need
+Array.prototype.filter();
+```
+
+**Map**
+```javascript
+// map() is used to modify the array
+Array.prototype.map();
+```
+
+**Reduce**
+```javascript
+// Used as an accumulator, just like how we would used an variable in a  for loop
+// to calculate sum
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log(array.reduce(reducer));
+```
+
+
+Convert Node list to array
+```javascript
+// querySelectorAll returns a Node List, we can convet it into an array
+Array.from(nodelist);
+```
+
+Use the textContent property of an attribute
+```javascript
+const de= links.map(link=> link.textContent);
+```
+
+##### Day 5 : Flexbox Gallery
+
+Learnt CSS concepts
+
+Learnt how to use cubic-bezier curves
+```css
+font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11)
+flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11)
+```
+Learnt the **includes** function
+```javascript
+e.propertyName.includes('flex');
+```
+
+##### Day 6 : Type Ahead
+
+Learnt how to fetch json data from a url
+```javascript
+// fetch returns a promise and then we convert it into json data
+fetch(url).then(blob => blob.json())
+``` 
+
+How to use spread data and push it into an array
+```javascript
+cities.push(...data);
+```
+
+How to use regular expressions to match inputs
+```javascript
+const regex = new RegExp('wordToMatch', 'gi');
+// to match the input
+element.match(regex);
+```
+
+Learnt **change** and **keyup** event listeners
