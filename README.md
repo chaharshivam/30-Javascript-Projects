@@ -190,3 +190,39 @@ element.match(regex);
 ```
 
 Learnt **change** and **keyup** event listeners
+
+##### Day 7 : Array Cardio 2
+
+Learnt a few more useful array functions
+
+**some**
+```javascript
+// Return true if atleast one condition is fulfilled
+Array.prototype.some();
+```
+
+**every**
+```javascript
+// Returns true if the condition is fulfilled by every array element
+Array.prototype.every();
+```
+
+**find** & **findIndex**
+```javascript
+// Used to find an element with the given property
+const comment = comments.find(comment => comment.id === 823423);
+// Used to find an element's given index 
+const index = comments.findIndex(comment => comment.id === 823423);
+```
+
+Learnt how to delete an array
+```javascript
+// Using splice
+comments.splice(index, 1);
+
+// Making a new array
+const newComments = [
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1)
+    ];
+```
